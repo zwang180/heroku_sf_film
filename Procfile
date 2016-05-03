@@ -1,1 +1,1 @@
-web: python manage.py runserver
+web: gunicorn uber_challenge.wsgi
