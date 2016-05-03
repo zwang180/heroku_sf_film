@@ -1,0 +1,27 @@
+#title-container {
+  position: absolute;
+  margin: auto;
+  top: 35%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#title {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 24px;
+}
+
+#search_body {
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+input {
+  width: 650px;
+  height: 30px;
+}
