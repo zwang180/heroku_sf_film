@@ -1,17 +1,23 @@
 {% load staticfiles %}
 
 <link rel = "stylesheet" type = "text/css" href = "{% static 'film/index.css' %}" />
+<link rel = "stylesheet" type = "text/css" href = "{% static 'film/bootstrap.min.css' %}" />
+<link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
 
-<center>
-  <h1>Welcome to SF Film Locations</h1>
-</center>
+<div id="title-container">
+  <center>
+    <p id="title">Welcome to SF Film Locations</p>
+  </center>
+</div>
 
-<center>
-  <form type="GET" action="{% url 'film:result' %}">
-      <input type="text" name="search_film_name"  placeholder="Search By Film Name" >
-      <br>
-      <button type="submit" >Submit</button>
-  </form>
+<div id="search_body">
+  <center>
+    <form type="GET" action="{% url 'film:result' %}">
+        <input type="text" name="search_film_name"  placeholder="Search By Film Name">
+        <br><br>
+        <button type="submit" >Submit</button>
+    </form>
 
-  <a href = "{% url 'film:list' %}">View Full List</a>
-</center>
+    <a href = "{% url 'film:list' %}">View Full List</a>
+  </center>
+</div>
