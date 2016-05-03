@@ -1,0 +1,12 @@
+{% if results %}
+  <h1>Result List</h1>
+
+  <ul>
+  {% for result in results %}
+    <li><a href = "{% url 'film:detail' result.title %}">{{ result.title }}</a></li>
+  {% endfor %}
+  </ul>
+
+{% else %}
+  <h1>No result found</h1>
+{% endif %}
